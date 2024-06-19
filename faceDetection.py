@@ -1,29 +1,56 @@
 import cv2
 import numpy as np
 
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt 
 
-# Load the pre-trained Haar Cascade for face detection
-# face_classifier = cv2.CascadeClassifier('data\haarcascades\haarcascade_frontalface_defaullt.xml')
-img = cv2.imread('save-images/firstImage.png')
+#Haar Cascade for face detection
+face_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_frontalface_defaullt.xml')
+eye_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_eye.xml')
 
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+def detect_faces(img):
 
-plt.subplot(1,1,1)
-plt.imshow(rgb)
-plt.show()
-#def detect_faces(img):
-    
- #   faces = face_classifier.detectMultiScale(gray, 1.3, 5)
+    face_img = img.copy()
+
+    face_rect = face_classifier.detectMultiScale(face_img, scaleFactor = 1.3, minNeighbors = 5)
     
   #  if len(faces) == 0:
    #     return img
     
-    #for (x, y, w, h) in faces:
-     #   cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 2)
+    for (x, y, w, h) in face_rect:
+        cv2.rectangle(face_img, (x, y), (x + w, y + h), (255, 0, 0), 2)
     
-    #return img
+    return face_img
+
+def detect_eyes(img):
+
+    eye_img = img.copy()
+
+    eye_rect = eye_classifier.detectMultiScale(eye_img, scaleFactor = 1.3, minNeighbors = 5)
+
+    for (x, y, w, h) in eye_rect:
+        cv2.rectangle(eye_img, (x, y), (x + w, y + h), (255, 0, 0), 2)
+    
+    return eye_img
+
+
+
+img = cv2.imread('images/3Image.jpg')
+img_copy1 = img.copy()
+img_copy2 = img.copy()
+img_copy3 = img.copy()
+
+face_detection = detect_faces(img_copy3)
+eyes_and_face = detect_eyes(face_detection)
+plt.imshow(eyes_and_face)
+cv2.imwrite('eyes_and_face.png', eyes_and_face)
+
+# gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+# rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+# plt.subplot(1,1,1)
+# plt.imshow(rgb)
+# plt.show()
+
 
 # Capture video from the default webcam
 # cap = cv2.VideoCapture(1)
