@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 #Haar Cascade for face detection
 face_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_frontalface_defaullt.xml')
 eye_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_eye.xml')
-
+fullbody_classifier = cv2.CascadeClassifier('data\haarcascades\haarcascade_fullbody.xml')
 def detect_faces(img):
 
     face_img = img.copy()
@@ -32,17 +32,28 @@ def detect_eyes(img):
     
     return eye_img
 
+def detect_fullbody(img):
 
+    fullbody_img = img.copy()
 
-img = cv2.imread('images/3Image.jpg')
+    fullbody_rect = fullbody_classifier.detectMultiScale(fullbody_img, scaleFactor = 1.3, minNeighbors = 5)
+
+    for (x, y, w, h) in fullbody_rect:
+        cv2.rectangle(fullbody_img, (x, y), (x + w, y + h), (255, 0, 0), 2)
+
+        return fullbody_img
+    
+
+img = cv2.imread('images/4Image.jpg')
 img_copy1 = img.copy()
 img_copy2 = img.copy()
 img_copy3 = img.copy()
 
 face_detection = detect_faces(img_copy3)
 eyes_and_face = detect_eyes(face_detection)
-plt.imshow(eyes_and_face)
-cv2.imwrite('eyes_and_face.png', eyes_and_face)
+eyes_face_and_fullbody = detect_fullbody(eyes_and_face)
+plt.imshow(eyes_face_and_fullbody)
+cv2.imwrite('eyes_face_and_fullbody.png', eyes_face_and_fullbody)
 
 # gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
