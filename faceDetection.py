@@ -67,7 +67,7 @@ def detect_fullbody(img):
 
     return fullbody_img
 
-img = cv2.imread('images/secondImage.jpg')
+img = cv2.imread('images/firstImage.jpg')
 object_img = cv2.imread('images/coroa.png', cv2.IMREAD_UNCHANGED) #para verificar a transparencia
 
 img_copy1 = img.copy()
@@ -81,11 +81,33 @@ img_final = object_above_head(img, face_detection, object_img)
 
 coroa_rgb = cv2.cvtColor(img_final, cv2.COLOR_BGR2RGB)
 
+#centro da imagem
+center_x = img_final.shape[1] // 2
+
+font = cv2.FONT_HERSHEY_SIMPLEX
+text = "Parabens"
+fontScale = 1
+color = (255,0,255)
+thickness = 2
+
+textsize, _ = cv2.getTextSize(text, font, fontScale, thickness)
+
+# get coords based on boundary
+textX = center_x - textsize[0]/2
+textY = 150
+
+textX = int(textX)
+textY = int(textY)
+
+imgText = cv2.putText(img_final, text, (textX, textY), font, fontScale, color, thickness, cv2.LINE_AA)
+
+coroa_rgb = cv2.cvtColor(imgText, cv2.COLOR_BGR2RGB)
+
 plt.imshow(coroa_rgb)
 plt.axis('off')
 plt.show()
 
-cv2.imwrite('happyBirthday/detect_face_coroa5.png', img_final)
+cv2.imwrite('happyBirthday/detect_face_coroa6.png', coroa_rgb)
 
 # gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
