@@ -11,11 +11,40 @@ def detect_faces(img):
     face_img = img.copy()
     face_rect = face_classifier.detectMultiScale(face_img, scaleFactor=1.3, minNeighbors=5)
     
-    for (x, y, w, h) in face_rect:
-        cv2.rectangle(face_img, (x, y), (x + w, y + h), (255, 0, 0), 2)
+    #for (x, y, w, h) in face_rect:
+     #   cv2.rectangle(face_img, (x, y), (x + w, y + h), (255, 0, 0), 2)
     
-    return face_img
+    return face_rect
 
+#colocar objetos por cima da cabeça 
+def object_above_head(img, face_rect, object_img):
+    img_final = img.copy()
+    objH, objW = object_img.shape[:2] #para ter o comprimento e a largura da imagem
+
+    print(face_rect)#dimensões do retangulo da cara
+
+    for (x, y, w, h) in face_rect:
+        pos_x = int(x + w / 2 - objW / 2)#posicao x para a imagem
+        pos_y = int(y - objH)#posicao y para a imagem
+
+        #verificar se fica bem posicionado
+        if pos_y < 0:
+            pos_y = 0 
+        if pos_x < 0:
+            pos_x = 0  
+        if pos_x + objW > img_final.shape[1]:
+            pos_x = img_final.shape[1] - objW  
+        if pos_y + objH > img_final.shape[0]:
+            pos_y = img_final.shape[0] - objH 
+
+        print(f"posições do objeto: ({pos_x}, {pos_y})")
+
+        for i in range(objH):
+            for j in range(objW):
+                if object_img[i, j, 3] > 0:  # Check if the pixel is not transparent
+                    img_final[pos_y + i, pos_x + j] = object_img[i, j, :3]
+            
+    return img_final
 
 #detetar os olhos
 def detect_eyes(img):
@@ -38,23 +67,47 @@ def detect_fullbody(img):
 
     return fullbody_img
 
-img = cv2.imread('images/4Image.jpg')
+img = cv2.imread('images/firstImage.jpg')
+object_img = cv2.imread('images/coroa.png', cv2.IMREAD_UNCHANGED) #para verificar a transparencia
 
 img_copy1 = img.copy()
 img_copy2 = img.copy()
 img_copy3 = img.copy()
 
 face_detection = detect_faces(img_copy1)
-eyes_and_face_detection = detect_eyes(face_detection)
-fullbody_detection = detect_fullbody(eyes_and_face_detection)
+img_final = object_above_head(img, face_detection, object_img)
+#eyes_and_face_detection = detect_eyes(face_detection)
+#fullbody_detection = detect_fullbody(eyes_and_face_detection)
 
-fullbody_detection_rgb = cv2.cvtColor(fullbody_detection, cv2.COLOR_BGR2RGB)
+coroa_rgb = cv2.cvtColor(img_final, cv2.COLOR_BGR2RGB)
 
-plt.imshow(fullbody_detection_rgb)
+#centro da imagem
+center_x = img_final.shape[1] // 2
+
+font = cv2.FONT_HERSHEY_SIMPLEX
+text = "Parabens"
+fontScale = 1
+color = (255,0,255)
+thickness = 2
+
+textsize, _ = cv2.getTextSize(text, font, fontScale, thickness)
+
+# get coords based on boundary
+textX = center_x - textsize[0]/2
+textY = 150
+
+textX = int(textX)
+textY = int(textY)
+
+imgText = cv2.putText(img_final, text, (textX, textY), font, fontScale, color, thickness, cv2.LINE_AA)
+
+coroa_rgb = cv2.cvtColor(imgText, cv2.COLOR_BGR2RGB)
+
+plt.imshow(coroa_rgb)
 plt.axis('off')
 plt.show()
 
-cv2.imwrite('eyes_face_and_fullbody.png', fullbody_detection)
+cv2.imwrite('happyBirthday/detect_face_coroa6.png', coroa_rgb)
 
 # gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
