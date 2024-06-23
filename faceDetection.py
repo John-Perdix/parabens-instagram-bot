@@ -64,7 +64,7 @@ def detect_fullbody(img):
 
     return fullbody_img
 
-object_img = cv2.imread('enfeites/coroa.png', cv2.IMREAD_UNCHANGED) #para verificar a transparencia
+object_img = cv2.imread('enfeites/chapeu2.png', cv2.IMREAD_UNCHANGED) #para verificar a transparencia
 
 # Specify the directory containing images
 image_folder = 'images'
