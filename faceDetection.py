@@ -1,6 +1,6 @@
 import cv2
-import numpy as np
-import matplotlib.pyplot as plt
+import os
+import glob
 
 face_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_frontalface_default.xml')
 eye_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_eye.xml')
@@ -10,9 +10,6 @@ fullbody_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_fullb
 def detect_faces(img):
     face_img = img.copy()
     face_rect = face_classifier.detectMultiScale(face_img, scaleFactor=1.3, minNeighbors=5)
-    
-    #for (x, y, w, h) in face_rect:
-     #   cv2.rectangle(face_img, (x, y), (x + w, y + h), (255, 0, 0), 2)
     
     return face_rect
 
@@ -67,75 +64,26 @@ def detect_fullbody(img):
 
     return fullbody_img
 
-img = cv2.imread('images/firstImage.jpg')
-object_img = cv2.imread('images/coroa.png', cv2.IMREAD_UNCHANGED) #para verificar a transparencia
+object_img = cv2.imread('enfeites/coroa.png', cv2.IMREAD_UNCHANGED) #para verificar a transparencia
 
-img_copy1 = img.copy()
-img_copy2 = img.copy()
-img_copy3 = img.copy()
+# Specify the directory containing images
+image_folder = 'images'
+output_folder = 'happyBirthday'
+os.makedirs(output_folder, exist_ok=True)
 
-face_detection = detect_faces(img_copy1)
-img_final = object_above_head(img, face_detection, object_img)
-#eyes_and_face_detection = detect_eyes(face_detection)
-#fullbody_detection = detect_fullbody(eyes_and_face_detection)
+# Use glob to find all image files with a specific extension (e.g., .jpg, .png)
+image_files = glob.glob(os.path.join(image_folder, '*'))
 
-coroa_rgb = cv2.cvtColor(img_final, cv2.COLOR_BGR2RGB)
+# Loop through each image file
+for image_file in image_files:
+    print(f"Change image: {image_file}")
 
-#centro da imagem
-center_x = img_final.shape[1] // 2
+    img = cv2.imread(image_file)
 
-font = cv2.FONT_HERSHEY_SIMPLEX
-text = "Parabens"
-fontScale = 1
-color = (255,0,255)
-thickness = 2
+    face_detection = detect_faces(img)
+    img_object = object_above_head(img, face_detection, object_img)
+    img_final = cv2.cvtColor(img_object, cv2.COLOR_BGR2RGB)
 
-textsize, _ = cv2.getTextSize(text, font, fontScale, thickness)
-
-# get coords based on boundary
-textX = center_x - textsize[0]/2
-textY = 150
-
-textX = int(textX)
-textY = int(textY)
-
-imgText = cv2.putText(img_final, text, (textX, textY), font, fontScale, color, thickness, cv2.LINE_AA)
-
-coroa_rgb = cv2.cvtColor(imgText, cv2.COLOR_BGR2RGB)
-
-plt.imshow(coroa_rgb)
-plt.axis('off')
-plt.show()
-
-cv2.imwrite('happyBirthday/detect_face_coroa6.png', coroa_rgb)
-
-# gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-# rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
-# plt.subplot(1,1,1)
-# plt.imshow(rgb)
-# plt.show()
-
-
-# Capture video from the default webcam
-# cap = cv2.VideoCapture(1)
-
-# while True:
-#     ret, frame = cap.read()
-#     if not ret:
-#         print("Failed to capture image")
-#         break
-    
-#     frame = detect_faces(frame)
-#     cv2.imshow('Video Face Detection', frame)
-
-#     if cv2.waitKey(1) & 0xFF == ord('p'):
-#         break
-
-    
-# Display the image
-#cv2.imshow('Image', img)
-#cv2.waitKey(0)
-
-#cap.release()
-#cv2.destroyAllWindows()
+    output_file = os.path.join(output_folder, os.path.basename(image_file))
+    cv2.imwrite(output_file, cv2.cvtColor(img_final, cv2.COLOR_RGB2BGR))
+    #os.remove(image_file)
