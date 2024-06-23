@@ -33,8 +33,6 @@ for i, media in enumerate(posts_after_today):
     picture_url = user_info.profile_pic_url
     username = user_info.username
     print(username)
-    
-    
     # Save the photo with a unique filename
     filename = f"images/insta_{i+1}"
     # Download the photo
