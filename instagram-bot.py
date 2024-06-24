@@ -36,20 +36,6 @@ for i, media in enumerate(posts_after_today):
     filename = f"images/insta_{i+1}"
     # Download the photo
     picture_data = client.photo_download_by_url(picture_url, filename)
-    
-    
-    """ usernameUser = user_info.username
-    description = mediaInfo.caption_text
-    print(usernameUser)
-    print(description)
-    filenameTxt = f"txt/insta_{i+1}.json"
-    with open(filenameTxt, "w", encoding="utf-8") as f:
-        f.write("{")
-        f.write("username: ")
-        f.write(usernameUser + "\n")
-        f.write("description: ")
-        f.write(description)
-        f.write("}") """
         
     usernameUser = user_info.username
     description = mediaInfo.caption_text
@@ -68,10 +54,6 @@ for i, media in enumerate(posts_after_today):
     with open(filenameTxt, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
         
-    
-    
-    
-    #client.photo_upload_to_story(filename)
 
 client.logout()
 
