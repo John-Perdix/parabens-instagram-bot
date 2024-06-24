@@ -1,6 +1,7 @@
 import cv2
 import os
 import glob
+import random
 
 face_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_frontalface_default.xml')
 eye_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_eye.xml')
@@ -64,9 +65,11 @@ def detect_fullbody(img):
 
     return fullbody_img
 
-object_img = cv2.imread('enfeites/chapeu2.png', cv2.IMREAD_UNCHANGED) #para verificar a transparencia
+#caminho das imagens de enfeites
+images_enfeite = 'enfeites'
+enfeites_folder = glob.glob(os.path.join(images_enfeite, '*'))
 
-# Specify the directory containing images
+#caminho das imagens do insta
 image_folder = 'images'
 output_folder = 'happyBirthday'
 os.makedirs(output_folder, exist_ok=True)
@@ -77,8 +80,11 @@ image_files = glob.glob(os.path.join(image_folder, '*'))
 # Loop through each image file
 for image_file in image_files:
     print(f"Change image: {image_file}")
-
     img = cv2.imread(image_file)
+
+    #escolher um enfeite para cada imagem
+    enfeites_random = random.choice(enfeites_folder)
+    object_img = cv2.imread(enfeites_random, cv2.IMREAD_UNCHANGED) #para verificar a transparencia
 
     face_detection = detect_faces(img)
     img_object = object_above_head(img, face_detection, object_img)
