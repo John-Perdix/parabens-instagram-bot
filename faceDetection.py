@@ -57,6 +57,14 @@ def object_above_head(img, face_rect, object_img, object_img2):
                             img_final[pos_y2 + i, pos_x2 + j] = object_img2[i, j, :3]
     return img_final
 
+#adicionar texto à imagem
+def add_text(img, text, position, font=cv2.FONT_HERSHEY_SIMPLEX, scale=1, color=(255, 255, 255), thickness=2):
+
+    img_text = img.copy()
+
+    cv2.putText(img_text, text, position, font, scale, color, thickness, lineType=cv2.LINE_AA)
+    return img_text
+
 #detetar os olhos
 def detect_eyes(img):
     eye_img = img.copy()
@@ -86,6 +94,7 @@ enfeites_folder = glob.glob(os.path.join(images_enfeite, '*'))
 images_enfeite2 = 'enfeites/baloes'
 enfeites_folder2 = glob.glob(os.path.join(images_enfeite2, '*'))
 
+
 #caminho das imagens do insta
 image_folder = 'images'
 output_folder = 'happyBirthday'
@@ -95,7 +104,7 @@ os.makedirs(output_folder, exist_ok=True)
 image_files = glob.glob(os.path.join(image_folder, '*'))
 
 # Loop through each image file
-for image_file in image_files:
+for i, image_file in enumerate(image_files):
     print(f"Change image: {image_file}")
     img = cv2.imread(image_file)
 
@@ -108,8 +117,17 @@ for image_file in image_files:
 
     face_detection = detect_faces(img)
     img_object = object_above_head(img, face_detection, object_img, object_img2)
+
+    filename_read = f"gemini_res/insta_{i+1}.txt"
+    with open(filename_read, "r", encoding="utf-8") as f:
+        data = f.read()
+
+    text = data
+    position = (50, 50)
+    img_text = add_text(img_object, text, position)
+    
     #img_final = cv2.cvtColor(img_object, cv2.COLOR_BGR2RGB)
 
     output_file = os.path.join(output_folder, os.path.basename(image_file))
-    cv2.imwrite(output_file, img_object)
+    cv2.imwrite(output_file, img_text)
     #os.remove(image_file)
