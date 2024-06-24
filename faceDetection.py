@@ -2,6 +2,7 @@ import cv2
 import os
 import glob
 import random
+import unicodedata
 
 face_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_frontalface_default.xml')
 eye_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_eye.xml')
@@ -58,12 +59,19 @@ def object_above_head(img, face_rect, object_img, object_img2):
     return img_final
 
 #adicionar texto à imagem
-def add_text(img, text, position, font=cv2.FONT_HERSHEY_SIMPLEX, scale=1, color=(255, 255, 255), thickness=2):
+def add_text(img, text, position, font=cv2.FONT_HERSHEY_SIMPLEX, scale=0.5, color=(255, 255, 255), thickness=2):
 
     img_text = img.copy()
 
     cv2.putText(img_text, text, position, font, scale, color, thickness, lineType=cv2.LINE_AA)
     return img_text
+
+#remover os acentos do txt
+def remover_acentos(texto):
+    return ''.join(
+        c for c in unicodedata.normalize('NFD', texto)
+        if unicodedata.category(c) != 'Mn'
+    )
 
 #detetar os olhos
 def detect_eyes(img):
@@ -122,8 +130,11 @@ for i, image_file in enumerate(image_files):
     with open(filename_read, "r", encoding="utf-8") as f:
         data = f.read()
 
-    text = data
-    position = (50, 50)
+    #tirar acentos
+    data_sem_acentos = remover_acentos(data)
+
+    text = data_sem_acentos
+    position = (5, 125)
     img_text = add_text(img_object, text, position)
     
     #img_final = cv2.cvtColor(img_object, cv2.COLOR_BGR2RGB)
