@@ -2,7 +2,7 @@ import subprocess
 import time
 
 # List of scripts to run in order
-scripts = ["instagram-bot.py", "faceDetection.py", "post-stories.py"]
+scripts = ["instagram-bot.py", "gemini.py", "faceDetection.py", "post-stories.py"]
 
 while True:
     for script in scripts:
