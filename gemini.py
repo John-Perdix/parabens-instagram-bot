@@ -21,55 +21,54 @@ print(f"API Key: {api_key}")  # Debugging: Verify if the API key is retrieved co
 
 # Configure the genai with the API key
 genai.configure(api_key=api_key)
-    
 
 # Create the model
-# See https://ai.google.dev/api/python/google/generativeai/GenerativeModel
 generation_config = {
-  "temperature": 1,
-  "top_p": 0.95,
-  "top_k": 64,
-  "max_output_tokens": 34,
-  "response_mime_type": "text/plain",
+    "temperature": 1,
+    "top_p": 0.95,
+    "top_k": 64,
+    "max_output_tokens": 34,
+    "response_mime_type": "text/plain",
 }
 
 model = genai.GenerativeModel(
-  model_name="gemini-1.5-flash",
-  generation_config=generation_config,
+    model_name="gemini-1.5-flash",
+    generation_config=generation_config,
 )
 
-chat_session = model.start_chat(
-  history=[
-  ]
-)
+chat_session = model.start_chat(history=[])
 
-
-# Specify the directory containing images
+# Specify the directory containing JSON files
 folder = 'info_insta'
 
-# Use glob to find all image files with a specific extension (e.g., .jpg, .png)
-files = glob.glob(os.path.join(folder, '*'))
+# Use glob to find all JSON files
+files = glob.glob(os.path.join(folder, 'insta_*.json'))
 
-username=""
-description = ""
-
-# Loop through each image file
+# Loop through each JSON file
 for i, file in enumerate(files):
     print(f"Processing file: {file}")
-    
-    filename_read = f"info_insta/insta_{i+1}.json"
-    with open(filename_read, "r", encoding="utf-8") as f:
-        data = json.load(f)
+
+    with open(file, "r", encoding="utf-8") as f:
+        try:
+            data = json.load(f)
+        except json.JSONDecodeError as e:
+            print(f"Error decoding JSON in '{file}': {e}")
+            continue
         
     # Access the data
     username = data.get("username")
     description = data.get("description")
-    response = chat_session.send_message("Make an happy birthday message for the user" + username + "using has context this description from the instagram post: " + description)
     
-    response_to_string = str(response.text)
-    filename_write = f"gemini_res/insta_{i+1}.txt"
-    with open(filename_write, "w", encoding="utf-8") as f:
-        f.write(response)
+    if username and description:
+        response = chat_session.send_message(f"Make a happy birthday message for {username} using this description: {description}")
+        
+        # Write response to file
+        response_text = response.text
+        filename_write = f"gemini_res/insta_{i+1}.txt"
+        with open(filename_write, "w", encoding="utf-8") as f:
+            f.write(response_text)
+    
+    # Optionally remove the JSON file after processing
     os.remove(file)
 
-print(response.text)
+print("All files processed successfully.")
