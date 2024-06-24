@@ -1,0 +1,36 @@
+=== Execution at 2024-06-24 23:48:56.761190 ===
+Change image: images\insta_1.jpg
+Change image: images\insta_2.jpg
+posições do objeto1: (66, 0)
+posições do objeto2: (66, 0)
+posições do objeto2: (66, 0)
+Change image: images\insta_3.jpg
+posições do objeto1: (57, 0)
+posições do objeto2: (57, 0)
+posições do objeto2: (57, 0)
+Change image: images\insta_4.jpg
+Change image: images\insta_5.jpg
+Change image: images\insta_6.jpg
+posições do objeto1: (97, 0)
+posições do objeto2: (97, 0)
+posições do objeto2: (97, 0)
+
+
+=== Execution at 2024-06-24 23:50:11.241235 ===
+Change image: images\insta_1.jpg
+Change image: images\insta_2.jpg
+posições do objeto1: (66, 0)
+posições do objeto2: (66, 0)
+posições do objeto2: (66, 0)
+Change image: images\insta_3.jpg
+posições do objeto1: (57, 0)
+posições do objeto2: (57, 0)
+posições do objeto2: (57, 0)
+Change image: images\insta_4.jpg
+Change image: images\insta_5.jpg
+Change image: images\insta_6.jpg
+posições do objeto1: (91, 0)
+posições do objeto2: (91, 0)
+posições do objeto2: (91, 0)
+
+

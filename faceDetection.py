@@ -126,7 +126,7 @@ for i, image_file in enumerate(image_files):
     face_detection = detect_faces(img)
     img_object = object_above_head(img, face_detection, object_img, object_img2)
 
-    filename_read = f"gemini_res/insta_{i+1}.txt"
+    """ filename_read = f"gemini_res/insta_{i+1}.txt"
     with open(filename_read, "r", encoding="utf-8") as f:
         data = f.read()
 
@@ -135,10 +135,10 @@ for i, image_file in enumerate(image_files):
 
     text = data_sem_acentos
     position = (5, 125)
-    img_text = add_text(img_object, text, position)
+    img_text = add_text(img_object, text, position) """
     
     #img_final = cv2.cvtColor(img_object, cv2.COLOR_BGR2RGB)
 
     output_file = os.path.join(output_folder, os.path.basename(image_file))
-    cv2.imwrite(output_file, img_text)
+    cv2.imwrite(output_file, img_object)
     #os.remove(image_file)

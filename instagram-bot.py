@@ -2,6 +2,8 @@ import datetime
 from instagrapi import Client
 from instagrapi.types import StoryMention, StoryMedia, StoryLink, StoryHashtag
 import json
+import sys
+
 
 with open("credenciais.txt", "r") as f:
     username, password = f.read().splitlines()
@@ -47,7 +49,7 @@ for i, media in enumerate(posts_after_today):
     # Create a dictionary to hold the data
     data = {
         "username": usernameUser,
-        "description": description
+        "description": description.encode(sys.stdout.encoding, errors='replace').decode(sys.stdout.encoding)
     }
 
     # Write the dictionary to a file as JSON
