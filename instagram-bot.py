@@ -26,7 +26,7 @@ for i, media in enumerate(posts_after_today):
     # Get more information about the media
     mediaInfo = client.media_info(media.id)
     #print(mediaInfo)
-    
+    description = mediaInfo.caption_text
 
     owner = mediaInfo.user
     user_info = client.user_info(owner.pk)
@@ -38,8 +38,7 @@ for i, media in enumerate(posts_after_today):
     # Download the photo
     picture_data = client.photo_download_by_url(picture_url, filename)
     
-        
-        
+    
     #client.photo_upload_to_story(filename)
 
 client.logout()
