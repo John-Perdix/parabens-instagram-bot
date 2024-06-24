@@ -15,33 +15,46 @@ def detect_faces(img):
     return face_rect
 
 #colocar objetos por cima da cabeça 
-def object_above_head(img, face_rect, object_img):
+def object_above_head(img, face_rect, object_img, object_img2):
     img_final = img.copy()
-    objH, objW = object_img.shape[:2] #para ter o comprimento e a largura da imagem
+    objH, objW = object_img.shape[:2] #para ter o comprimento e a largura do primeiro objeto
 
-    print(face_rect)#dimensões do retangulo da cara
+    objH2, objW2 = object_img2.shape[:2] #do segundo objeto
 
     for (x, y, w, h) in face_rect:
         pos_x = int(x + w / 2 - objW / 2)#posicao x para a imagem
         pos_y = int(y - objH)#posicao y para a imagem
 
-        #verificar se fica bem posicionado
-        if pos_y < 0:
-            pos_y = 0 
-        if pos_x < 0:
-            pos_x = 0  
-        if pos_x + objW > img_final.shape[1]:
-            pos_x = img_final.shape[1] - objW  
-        if pos_y + objH > img_final.shape[0]:
-            pos_y = img_final.shape[0] - objH 
+        # Boundary check for the first object
+        pos_x = max(0, min(pos_x, img_final.shape[1] - objW))
+        pos_y = max(0, min(pos_y, img_final.shape[0] - objH))   
 
-        print(f"posições do objeto: ({pos_x}, {pos_y})")
+        print(f"posições do objeto1: ({pos_x}, {pos_y})")
 
         for i in range(objH):
             for j in range(objW):
                 if object_img[i, j, 3] > 0:  # Check if the pixel is not transparent
-                    img_final[pos_y + i, pos_x + j] = object_img[i, j, :3]
-            
+                    if 0 <= pos_y + i < img_final.shape[0] and 0 <= pos_x + j < img_final.shape[1]:
+                        img_final[pos_y + i, pos_x + j] = object_img[i, j, :3]
+
+        positions2 = [
+            (int(x + w), int(y + h)),  #direita
+            (int(x - h), int(y + h ))  #esquerda
+        ]
+        
+        for pos_x2, pos_y2 in positions2: 
+            # Boundary check for the second object
+            pos_x2 = max(0, min(pos_x2, img_final.shape[1] - objW2))
+            pos_y2 = max(0, min(pos_y2, img_final.shape[0] - objH2))
+
+            print(f"posições do objeto2: ({pos_x}, {pos_y})")
+
+             # Apply the second object
+            for i in range(objH2):
+                for j in range(objW2):
+                    if object_img2[i, j, 3] > 0:  # Check if the pixel is not transparent
+                        if 0 <= pos_y2 + i < img_final.shape[0] and 0 <= pos_x2 + j < img_final.shape[1]:
+                            img_final[pos_y2 + i, pos_x2 + j] = object_img2[i, j, :3]
     return img_final
 
 #detetar os olhos
@@ -65,9 +78,13 @@ def detect_fullbody(img):
 
     return fullbody_img
 
-#caminho das imagens de enfeites
-images_enfeite = 'enfeites'
+#caminho das imagens de enfeites acima da cabeça
+images_enfeite = 'enfeites/acimaDaCabeca'
 enfeites_folder = glob.glob(os.path.join(images_enfeite, '*'))
+
+#caminho das imagens de enfeites ao lado da cabeça
+images_enfeite2 = 'enfeites/baloes'
+enfeites_folder2 = glob.glob(os.path.join(images_enfeite2, '*'))
 
 #caminho das imagens do insta
 image_folder = 'images'
@@ -86,10 +103,13 @@ for image_file in image_files:
     enfeites_random = random.choice(enfeites_folder)
     object_img = cv2.imread(enfeites_random, cv2.IMREAD_UNCHANGED) #para verificar a transparencia
 
+    enfeites_random2 = random.choice(enfeites_folder2)
+    object_img2 = cv2.imread(enfeites_random2, cv2.IMREAD_UNCHANGED)
+
     face_detection = detect_faces(img)
-    img_object = object_above_head(img, face_detection, object_img)
-    img_final = cv2.cvtColor(img_object, cv2.COLOR_BGR2RGB)
+    img_object = object_above_head(img, face_detection, object_img, object_img2)
+    #img_final = cv2.cvtColor(img_object, cv2.COLOR_BGR2RGB)
 
     output_file = os.path.join(output_folder, os.path.basename(image_file))
-    cv2.imwrite(output_file, cv2.cvtColor(img_final, cv2.COLOR_RGB2BGR))
+    cv2.imwrite(output_file, img_object)
     #os.remove(image_file)
