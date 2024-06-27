@@ -1,11 +1,5 @@
-"""
-Install the Google AI Python SDK
+import emoji
 
-$ pip install google-generativeai
-
-See the getting started guide for more information:
-https://ai.google.dev/gemini-api/docs/get-started/python
-"""
 
 import os
 import google.generativeai as genai
@@ -39,7 +33,7 @@ model = genai.GenerativeModel(
 chat_session = model.start_chat(history=[])
 
 # Specify the directory containing JSON files
-folder = 'info_insta'
+folder = 'contexto'
 
 # Use glob to find all JSON files
 files = glob.glob(os.path.join(folder, 'insta_*.json'))
@@ -56,24 +50,20 @@ for i, file in enumerate(files):
             continue
         
     # Access the data
-    username = data.get("username")
-    description = data.get("description")
+    contexto = data.get("contexto")
     
-    if username and description:
-        response = chat_session.send_message(f"Make a happy birthday message for {username} using this description: {description}")
+    if contexto:
+        response = chat_session.send_message(f"Choose an emoji from the this API: https://carpedm20.github.io/emoji/docs/ using as context the following context: {contexto}. Your output should only be the string for the emoji code, with the following style ´:name_of_the_emoji:´")
         
         # Write response to file
         response_text = response.text
-        filename_write = f"gemini_res/insta_{i+1}.txt"
+        filename_write = f"emojis/insta_{i+1}.txt"
         with open(filename_write, "w", encoding="utf-8") as f:
             f.write(response_text)
     
     # Optionally remove the JSON file after processing
     os.remove(file)
+    print(response)
+    #print(emoji.emojize(response))
 
 print("All files processed successfully.")
-
-
-
-
-

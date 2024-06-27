@@ -5,7 +5,7 @@ import json
 import sys
 
 
-with open("credenciais.txt", "r") as f:
+with open("credenciais2.txt", "r") as f:
     username, password = f.read().splitlines()
 
 # Get today's date
