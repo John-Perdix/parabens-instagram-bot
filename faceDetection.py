@@ -124,6 +124,12 @@ for i, image_file in enumerate(image_files):
     object_img2 = cv2.imread(enfeites_random2, cv2.IMREAD_UNCHANGED)
 
     face_detection = detect_faces(img)
+    
+    # se não for detetada nenhuma cara
+    if len(face_detection) == 0:
+        print(f"nenhuma cara detetada {image_file}")
+        continue
+
     img_object = object_above_head(img, face_detection, object_img, object_img2)
 
     """ filename_read = f"gemini_res/insta_{i+1}.txt"
@@ -141,16 +147,4 @@ for i, image_file in enumerate(image_files):
 
     output_file = os.path.join(output_folder, os.path.basename(image_file))
     cv2.imwrite(output_file, img_object)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     #os.remove(image_file)
