@@ -48,3 +48,837 @@ Traceback (most recent call last):
 instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
 
 
+=== Execution at 2024-06-29 22:41:19.509265 ===
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 45, in <module>
+    print(description)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+
+
+=== Execution at 2024-06-29 22:43:57.467066 ===
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 45, in <module>
+    print(description)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+
+
+=== Execution at 2024-06-29 22:45:49.146581 ===
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 45, in <module>
+    print(description)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+
+
+=== Execution at 2024-06-29 22:47:38.043376 ===
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 45, in <module>
+    print(description)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+
+
+=== Execution at 2024-06-29 22:49:26.862984 ===
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 45, in <module>
+    print(description)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+
+
+=== Execution at 2024-06-29 22:51:15.958462 ===
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/ofalante.blog/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/ofalante.blog/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/ofalante.blog/?__a=1&__d=dis) >>> 
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 45, in <module>
+    print(description)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 361-363: character maps to <undefined>
+
+
+=== Execution at 2024-06-29 22:55:21.708566 ===
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Status 201: JSONDecodeError in public_request (url=https://www.instagram.com/love_epicus/?__a=1&__d=dis) >>> 
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 45, in <module>
+    print(description)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+
+
+=== Execution at 2024-06-29 23:04:01.644356 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 8, in <module>
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+                 ^^
+NameError: name 'io' is not defined. Did you mean: 'id'? Or did you forget to import 'io'?
+
+
+=== Execution at 2024-06-29 23:05:30.034129 ===
+=== Execution at 2024-06-29 23:05:30.036124 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:07:36.478316 ===
+=== Execution at 2024-06-29 23:07:36.478316 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:09:56.856267 ===
+=== Execution at 2024-06-29 23:09:56.857265 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:12:02.190728 ===
+=== Execution at 2024-06-29 23:12:02.191726 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:14:11.247029 ===
+=== Execution at 2024-06-29 23:14:11.248026 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:16:17.432563 ===
+=== Execution at 2024-06-29 23:16:17.433562 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:18:24.437796 ===
+=== Execution at 2024-06-29 23:18:24.437796 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:20:33.478447 ===
+=== Execution at 2024-06-29 23:20:33.479445 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:22:40.941246 ===
+=== Execution at 2024-06-29 23:22:40.942238 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:25:00.974582 ===
+=== Execution at 2024-06-29 23:25:00.975587 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:27:08.486144 ===
+=== Execution at 2024-06-29 23:27:08.487143 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:29:54.780821 ===
+=== Execution at 2024-06-29 23:29:54.781850 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:32:31.120551 ===
+=== Execution at 2024-06-29 23:32:31.121549 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:34:53.820504 ===
+=== Execution at 2024-06-29 23:34:53.821503 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:37:16.175545 ===
+=== Execution at 2024-06-29 23:37:16.176521 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:39:53.945199 ===
+=== Execution at 2024-06-29 23:39:53.946205 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:42:31.328568 ===
+=== Execution at 2024-06-29 23:42:31.329548 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:45:24.323096 ===
+=== Execution at 2024-06-29 23:45:24.324094 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:48:03.350978 ===
+=== Execution at 2024-06-29 23:48:03.351965 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:50:59.858332 ===
+=== Execution at 2024-06-29 23:50:59.859330 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:53:09.074930 ===
+=== Execution at 2024-06-29 23:53:09.075927 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:55:56.212095 ===
+=== Execution at 2024-06-29 23:55:56.213091 ===
+Exception occurred: write() argument must be str, not None
+
+
+=== Execution at 2024-06-29 23:57:11.702736 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-29 23:58:21.626079 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-29 23:59:32.349828 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:00:42.812390 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:01:53.161432 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:03:02.763067 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:04:12.846723 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:05:25.417369 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:06:35.330343 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:07:45.889563 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:08:56.383065 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:10:05.318085 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:11:15.019613 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:12:24.152906 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:13:33.436307 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:14:43.492401 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:15:56.391477 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:17:09.523441 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:18:22.390766 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:19:34.539087 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:20:46.652730 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:22:00.019252 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 00:23:12.776304 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 16:51:48.578295 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+
+=== Execution at 2024-06-30 16:53:04.631241 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/accounts/login/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\instagram-bot.py", line 18, in <module>
+    client.login(username, password)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\auth.py", line 441, in login
+    logged = self.private_request("accounts/login/", data, login=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 382, in _send_private_request
+    raise PleaseWaitFewMinutes(e, response=e.response, **last_json)
+instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
+
+

@@ -3,7 +3,10 @@ from instagrapi import Client
 from instagrapi.types import StoryMention, StoryMedia, StoryLink, StoryHashtag
 import json
 import sys
+import io
 
+# Set the default encoding to UTF-8
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 with open("credenciais2.txt", "r") as f:
     username, password = f.read().splitlines()
@@ -15,7 +18,6 @@ client = Client()
 client.login(username, password)
 
 hashtag = "parabens"
-
 medias = client.hashtag_medias_recent(hashtag, 20)
 
 # Filter posts taken after today

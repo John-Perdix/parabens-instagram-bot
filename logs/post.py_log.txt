@@ -48,3 +48,152 @@ Traceback (most recent call last):
 instagrapi.exceptions.PleaseWaitFewMinutes: Please wait a few minutes before you try again.
 
 
+=== Execution at 2024-06-29 22:42:29.005653 ===
+Processing image: happyBirthday\insta_1.jpg
+Processing image: happyBirthday\insta_2.jpg
+Processing image: happyBirthday\insta_3.jpg
+Processing image: happyBirthday\insta_4.jpg
+Processing image: happyBirthday\insta_5.jpg
+Processing image: happyBirthday\insta_6.jpg
+
+
+=== Execution at 2024-06-29 22:44:20.890495 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/media/configure/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\post.py", line 27, in <module>
+    client.photo_upload(image_file, data)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\photo.py", line 265, in photo_upload
+    if self.photo_configure(
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\photo.py", line 351, in photo_configure
+    return self.private_request("media/configure/", self.with_default_data(data))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 394, in _send_private_request
+    raise FeedbackRequired(
+instagrapi.exceptions.FeedbackRequired: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
+
+
+=== Execution at 2024-06-29 22:46:09.615365 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/media/configure/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\post.py", line 27, in <module>
+    client.photo_upload(image_file, data)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\photo.py", line 265, in photo_upload
+    if self.photo_configure(
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\photo.py", line 351, in photo_configure
+    return self.private_request("media/configure/", self.with_default_data(data))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 394, in _send_private_request
+    raise FeedbackRequired(
+instagrapi.exceptions.FeedbackRequired: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
+
+
+=== Execution at 2024-06-29 22:47:58.842174 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/media/configure/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\post.py", line 27, in <module>
+    client.photo_upload(image_file, data)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\photo.py", line 265, in photo_upload
+    if self.photo_configure(
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\photo.py", line 351, in photo_configure
+    return self.private_request("media/configure/", self.with_default_data(data))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 394, in _send_private_request
+    raise FeedbackRequired(
+instagrapi.exceptions.FeedbackRequired: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
+
+
+=== Execution at 2024-06-29 22:49:46.830843 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/media/configure/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\post.py", line 27, in <module>
+    client.photo_upload(image_file, data)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\photo.py", line 265, in photo_upload
+    if self.photo_configure(
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\photo.py", line 351, in photo_configure
+    return self.private_request("media/configure/", self.with_default_data(data))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 394, in _send_private_request
+    raise FeedbackRequired(
+instagrapi.exceptions.FeedbackRequired: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
+
+
+=== Execution at 2024-06-29 22:51:36.165693 ===
+Traceback (most recent call last):
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 359, in _send_private_request
+    response.raise_for_status()
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://i.instagram.com/api/v1/media/configure/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joao_\Desktop\Perdix\Faculdade\Mestrado\1_ano\2_semestre\Criatividade_computacional\instagram-bot\parabens-instagram-bot\post.py", line 27, in <module>
+    client.photo_upload(image_file, data)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\photo.py", line 265, in photo_upload
+    if self.photo_configure(
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\photo.py", line 351, in photo_configure
+    return self.private_request("media/configure/", self.with_default_data(data))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 541, in private_request
+    raise e
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 526, in private_request
+    self._send_private_request(endpoint, **kwargs)
+  File "C:\Users\joao_\AppData\Local\Programs\Python\Python312\Lib\site-packages\instagrapi\mixins\private.py", line 394, in _send_private_request
+    raise FeedbackRequired(
+instagrapi.exceptions.FeedbackRequired: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
+
+
