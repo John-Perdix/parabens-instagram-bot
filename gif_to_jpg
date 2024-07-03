@@ -1,0 +1,27 @@
+import cv2
+
+def convert_gif_to_jpg_opencv(gif_filepath, jpg_filepath):
+  """
+  Reads the first frame of a GIF and saves it as a JPG using OpenCV.
+
+  Args:
+      gif_filepath (str): Path to the GIF image file.
+      jpg_filepath (str): Path to save the converted JPG image file.
+  """
+  try:
+    cap = cv2.VideoCapture(gif_filepath)
+    ret, frame = cap.read()
+    if ret:
+      cv2.imwrite(jpg_filepath, frame)
+      print(f"Converted GIF first frame to JPG: {gif_filepath} -> {jpg_filepath}")
+    cap.release()
+    cv2.destroyAllWindows()
+  except FileNotFoundError:
+    print(f"Error: GIF file not found: {gif_filepath}")
+  except Exception as e:
+    print(f"Error converting GIF with OpenCV: {e}")
+
+# Example usage
+gif_file = "path/to/your/gif.gif"
+jpg_file = "path/to/save/image.jpg"
+convert_gif_to_jpg_opencv(gif_file, jpg_file)
