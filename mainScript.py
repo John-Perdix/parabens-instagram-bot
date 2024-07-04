@@ -3,7 +3,7 @@ import time
 import datetime
 
 # List of scripts to run in order
-scripts = ["instagram-bot.py", "gemini.py", "faceDetection.py", "new_post.py"]
+scripts = ["instagram-bot.py", "gemini.py","tenor.py" "faceDetection.py", "new_post.py"]
 
 # Function to log output to a file
 def log_output(script_name, output):
