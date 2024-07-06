@@ -1,9 +1,7 @@
 import requests
-import json
 import os
 import random
 from PIL import Image, ImageSequence
-import cv2  # Import OpenCV library
 
 # Specify the directory containing the images
 folderCount = 'images'
@@ -50,12 +48,13 @@ def requestGifs(search_term, folderSave):
 
                     # Convert GIF to PNG with transparency using Pillow
                     with Image.open(gif_path) as img:
-                        for frame in ImageSequence.Iterator(img):
-                            frame = frame.convert("RGBA")
-                            png_path = os.path.join(folderSave, f"{filename[:-4]}.png")
-                            frame.save(png_path, format="PNG")
-                            print(f"Downloaded and converted image: {png_path}")
-                            break  # Save only the first frame as PNG
+                        frames = [frame.copy() for frame in ImageSequence.Iterator(img)]
+                        middle_frame = frames[len(frames) // 2]
+                        middle_frame = middle_frame.convert("RGBA")
+                        png_path = os.path.join(folderSave, f"{filename[:-4]}.png")
+                        middle_frame.save(png_path, format="PNG")
+                        print(f"Downloaded and converted image: {png_path}")
+                    os.remove(gif_path)
                 else:
                     print(f"Failed to download image: {image_url}")
     else:
