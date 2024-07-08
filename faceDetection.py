@@ -15,12 +15,15 @@ def detect_faces(img):
     
     return face_rect
 
-#colocar objetos por cima da cabeça 
-def object_above_head(img, face_rect, object_img, object_img2):
+#colocar objetos na imagem 
+def object_above_head(img, face_rect, object_img, object_img2, object_img3):
     img_final = img.copy()
+
     objH, objW = object_img.shape[:2] #para ter o comprimento e a largura do primeiro objeto
 
     objH2, objW2 = object_img2.shape[:2] #do segundo objeto
+
+    objH3, objW3 = object_img3.shape[:2] #do terceiro
 
     for (x, y, w, h) in face_rect:
         pos_x = int(x + w / 2 - objW / 2)#posicao x para a imagem
@@ -34,28 +37,48 @@ def object_above_head(img, face_rect, object_img, object_img2):
 
         for i in range(objH):
             for j in range(objW):
-                if object_img[i, j, 3] > 0:  # Check if the pixel is not transparent
+                if object_img[i, j, 3] > 0:  # Check if the pixel is not transparent    
                     if 0 <= pos_y + i < img_final.shape[0] and 0 <= pos_x + j < img_final.shape[1]:
                         img_final[pos_y + i, pos_x + j] = object_img[i, j, :3]
 
+        #segundo enfeite
         positions2 = [
             (int(x + w), int(y + h)),  #direita
             (int(x - h), int(y + h ))  #esquerda
         ]
         
         for pos_x2, pos_y2 in positions2: 
-            # Boundary check for the second object
+        
             pos_x2 = max(0, min(pos_x2, img_final.shape[1] - objW2))
             pos_y2 = max(0, min(pos_y2, img_final.shape[0] - objH2))
 
-            print(f"posições do objeto2: ({pos_x}, {pos_y})")
+            print(f"posições do objeto2: ({pos_x2}, {pos_y2})")
 
-             # Apply the second object
             for i in range(objH2):
                 for j in range(objW2):
-                    if object_img2[i, j, 3] > 0:  # Check if the pixel is not transparent
+                    if object_img2[i, j, 3] > 0: 
                         if 0 <= pos_y2 + i < img_final.shape[0] and 0 <= pos_x2 + j < img_final.shape[1]:
                             img_final[pos_y2 + i, pos_x2 + j] = object_img2[i, j, :3]
+
+        #terceiro enfeite
+
+        positions3 = [
+            (int(x + w), int(y - h)),  #direita
+            (int(x - h), int(y - h ))  #esquerda
+        ]
+        
+        for pos_x3, pos_y3 in positions3: 
+        
+            pos_x3 = max(0, min(pos_x3, img_final.shape[1] - objW3))
+            pos_y3 = max(0, min(pos_y3, img_final.shape[0] - objH3))
+
+            print(f"posições do objeto3: ({pos_x3}, {pos_y3})")
+
+            for i in range(objH3):
+                for j in range(objW3):
+                    if object_img3[i, j, 3] > 0:  # Check if the pixel is not transparent
+                        if 0 <= pos_y3 + i < img_final.shape[0] and 0 <= pos_x3 + j < img_final.shape[1]:
+                            img_final[pos_y3 + i, pos_x3 + j] = object_img3[i, j, :3]
     return img_final
 
 #adicionar texto à imagem
@@ -83,7 +106,6 @@ def detect_eyes(img):
     
     return eye_img
 
-
 #detetar o corpo
 def detect_fullbody(img):
     fullbody_img = img.copy()
@@ -94,14 +116,21 @@ def detect_fullbody(img):
 
     return fullbody_img
 
-#caminho das imagens de enfeites acima da cabeça
-images_enfeite = 'enfeites/acimaDaCabeca'
-enfeites_folder = glob.glob(os.path.join(images_enfeite, '*'))
+#caminho das imagens de enfeites acima da cabeça/hat
+enfeite_hat = 'enfeites/hats'
+enfeites_folder_hat = glob.glob(os.path.join(enfeite_hat, '*'))
 
-#caminho das imagens de enfeites ao lado da cabeça
-images_enfeite2 = 'enfeites/baloes'
-enfeites_folder2 = glob.glob(os.path.join(images_enfeite2, '*'))
+#caminho das imagens de enfeites ao lado da cabeça/baloons
+enfeite_baloons = 'enfeites/baloons'
+enfeites_folder_baloons = glob.glob(os.path.join(enfeite_baloons, '*'))
 
+#caminho das imagens de enfeites ao lado da cabeça/confety
+enfeite_confety = 'enfeites/confety'
+enfeites_folder_confety = glob.glob(os.path.join(enfeite_confety, '*'))
+
+#dimensoes para enfeites
+new_width = 40
+new_height = 40
 
 #caminho das imagens do insta
 image_folder = 'images'
@@ -117,11 +146,17 @@ for i, image_file in enumerate(image_files):
     img = cv2.imread(image_file)
 
     #escolher um enfeite para cada imagem
-    enfeites_random = random.choice(enfeites_folder)
-    object_img = cv2.imread(enfeites_random, cv2.IMREAD_UNCHANGED) #para verificar a transparencia
+    enfeites_random_hat = random.choice(enfeites_folder_hat)
+    object_img = cv2.imread(enfeites_random_hat, cv2.IMREAD_UNCHANGED) #para verificar a transparencia
+    enfeites_random_resize_hat = cv2.resize(object_img, (new_width, new_height))
 
-    enfeites_random2 = random.choice(enfeites_folder2)
-    object_img2 = cv2.imread(enfeites_random2, cv2.IMREAD_UNCHANGED)
+    enfeites_random_baloon = random.choice(enfeites_folder_baloons)
+    object_img2 = cv2.imread(enfeites_random_baloon, cv2.IMREAD_UNCHANGED)
+    enfeites_random_resize_baloon = cv2.resize(object_img2, (new_width, new_height))
+
+    enfeites_random_confety = random.choice(enfeites_folder_confety)
+    object_img3 = cv2.imread(enfeites_random_confety, cv2.IMREAD_UNCHANGED)
+    enfeites_random_resize_confety = cv2.resize(object_img3, (new_width, new_height))
 
     face_detection = detect_faces(img)
     
@@ -130,7 +165,12 @@ for i, image_file in enumerate(image_files):
         print(f"nenhuma cara detetada {image_file}")
         continue
 
-    img_object = object_above_head(img, face_detection, object_img, object_img2)
+    img_object = object_above_head(img, face_detection, enfeites_random_resize_hat, enfeites_random_resize_baloon, enfeites_random_resize_confety)
+
+    #remover os enfeites usados
+    os.remove(enfeites_random_hat)
+    os.remove(enfeites_random_baloon)
+    os.remove(enfeites_random_confety)
 
     """ filename_read = f"gemini_res/insta_{i+1}.txt"
     with open(filename_read, "r", encoding="utf-8") as f:
