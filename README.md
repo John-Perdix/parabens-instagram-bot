@@ -1,16 +1,16 @@
 # Parabens Instagram Bot
 
-Parabens Instagram Bot is a Python-based automation tool designed to interact with Instagram to automatically search posts based on a specific hashtag, download the profile picture from the person who posted the picture, add ornaments and post the picture with a birthday message. This bot is intended for giving automatic birthday messages to pthe users making use of LLM capabilities.
+Parabens Instagram Bot is a Python-based automation tool designed to interact with Instagram to automatically search posts based on a specific hashtag, download the profile picture from the person who posted the picture, add ornaments and post the picture with a birthday message. This bot is intended for giving automatic birthday messages to the users making use of LLM capabilities.
 
 ## Features
 
-- **search**: Seaches posts based on the hashtag "parabens".
+- **Search**: Seaches posts based on the hashtag "parabens".
 - **Auto-like**: Automatically likes posts based on the hashtag "parabens".
 - **Downloads profile pictures**: Automatically downloads the profile pictures of the one who posted with the hashtag "parabens".
-- **Downloads post's description**: Automatically downloads the profile pictures of the one who posted with the hashtag "parabens".
-- **face detections**: Automatically detects faces in the picture.
+- **Downloads post's description**: Automatically downloads the post's description of the one who posted with the hashtag "parabens".
+- **Face detections**: Automatically detects faces in the picture.
 - **Adds ornaments**: Adds ornaments to arround the faces detected.
-- **Prompts gemini**: Prompts gemini based on the context of the post's description, making a birthday messange.
+- **Prompts gemini**: Prompts gemini based on the context of the post's description, making a birthday message.
 - **Auto-posts**: Posts the picture with the ornaments and uses the gemini response as the description.
 - **Logging**: Maintains a log of all actions performed for transparency and review.
 
