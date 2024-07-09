@@ -31,7 +31,7 @@ def upload_photos(client, image_files):
             print(f"An error occurred: {e}")
 
 def main():
-    username, password = read_credentials("credenciais2.txt")
+    username, password = read_credentials("credenciais.txt")
     client = Client()
     client.login(username, password)
 

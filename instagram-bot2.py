@@ -11,7 +11,7 @@ import os
 # Set the default encoding to UTF-8
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-with open("credenciais2.txt", "r") as f:
+with open("credenciais.txt", "r") as f:
     username, password = f.read().splitlines()
 
 # Get today's date
