@@ -17,38 +17,13 @@ session_path = f"logs/{username}_session.json"
 
 # Create a Client instance
 client = Client()
-
-
-# Function to attempt login with retry logic
-def login_with_retry(client, username, password, session_path, retries=5, delay=30):
-    for attempt in range(retries):
-        try:
-                client.login(username, password)
-                client.dump_settings(session_path)
-                print("Login successful and session saved")
-                return True
-        except ChallengeRequired:
-            code = input("Enter the 2FA code: ")
-            client.challenge_code_handler = lambda username, choice: code
-            client.complete_challenge()
-            client.dump_settings(session_path)
-            print("2FA challenge completed and session saved")
-            return True
-        except ClientError as e:
-            if 'Please wait a few minutes before you try again' in str(e):
-                print(f"1: Rate limit hit, retrying in {delay} seconds... (Attempt {attempt + 1}/{retries})")
-                time.sleep(delay)
-            else:
-                print(f"Login failed: {e}")
-                break
-    return False
-
+client.login(username, password)
 
 
 hashtag = "parabens"
 num_medias = 20
 
-def process_hashtag_medias(client, hashtag, num_medias, processed_file="processed_media/processed_media_ids.txt"):
+def process_hashtag_medias(client, hashtag, num_medias, processed_file="images/processed_media_ids.txt"):
     today = date.today()
     
     # Load processed media IDs
@@ -58,24 +33,10 @@ def process_hashtag_medias(client, hashtag, num_medias, processed_file="processe
     except FileNotFoundError:
         processed_media_ids = set()
 
-    retries = 5
-    delay = 5  # seconds
 
-    for attempt in range(retries):
-        try:
-            medias = client.hashtag_medias_recent(hashtag, num_medias)
-            print(f"Successfully fetched {len(medias)} medias on attempt {attempt + 1}")
-            break
-        except PleaseWaitFewMinutes:
-            print(f"2: Rate limit hit, retrying in {delay} seconds... (Attempt {attempt + 1}/{retries})")
-            time.sleep(delay)
-        except Exception as e:
-            print(f"An unexpected error occurred: {e}")
-            medias = []
-            break
-    else:
-        print("Failed to fetch medias after multiple attempts due to rate limits or other issues.")
-        return
+    medias = client.hashtag_medias_recent(hashtag, num_medias)
+    print(f"Successfully fetched {len(medias)}")
+           
 
     posts_to_process = [post for post in medias if post.taken_at.date() >= today and post.id not in processed_media_ids]
     
@@ -107,7 +68,7 @@ def process_hashtag_medias(client, hashtag, num_medias, processed_file="processe
 
             # Create a dictionary to hold the data
             data = {
-                "username": usernameUser,
+                "username": "@" + usernameUser,
                 "description": description.encode(sys.stdout.encoding, errors='replace').decode(sys.stdout.encoding)
             }
 
@@ -129,9 +90,6 @@ def process_hashtag_medias(client, hashtag, num_medias, processed_file="processe
         f.write("\n".join(processed_media_ids))
 
 # Attempt login with retry mechanism
-if login_with_retry(client, username, password, session_path):
-    print("login_with_retry ran")
-    process_hashtag_medias(client, hashtag, num_medias)
-    client.logout()
-else:
-    print("Failed to log in after multiple attempts.")
+process_hashtag_medias(client, hashtag, num_medias)
+client.logout()
+

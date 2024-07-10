@@ -1,60 +1,9 @@
-=== Execution at 2024-07-09 23:40:37.735733 ===
-Login successful and session saved
-login_with_retry ran
-Successfully fetched 20 medias on attempt 1
-An error occurred while processing media 3408654615044689977_65935855067: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 13seconds, to prevent instagram restrictions
-An error occurred while processing media 3408370592959345668_2364220188: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 18seconds, to prevent instagram restrictions
-An error occurred while processing media 3408644436475699007_55794620230: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 23seconds, to prevent instagram restrictions
-An error occurred while processing media 3408264523952144004_8719039516: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 13seconds, to prevent instagram restrictions
-An error occurred while processing media 3408640838735542934_942787056: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 16seconds, to prevent instagram restrictions
-An error occurred while processing media 3408403769099367709_45191160743: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 15seconds, to prevent instagram restrictions
-An error occurred while processing media 3408425595527718126_43574488473: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 14seconds, to prevent instagram restrictions
-
-
-=== Execution at 2024-07-09 23:44:22.020254 ===
-Login successful and session saved
-login_with_retry ran
-Successfully fetched 20 medias on attempt 1
-An error occurred while processing media 3408428799127746647_65572172954: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 25seconds, to prevent instagram restrictions
-An error occurred while processing media 3408324341044384362_57580932841: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 13seconds, to prevent instagram restrictions
-An error occurred while processing media 3408662161823150336_8682020969: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 13seconds, to prevent instagram restrictions
-An error occurred while processing media 3408654615044689977_65935855067: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 17seconds, to prevent instagram restrictions
-An error occurred while processing media 3408644436475699007_55794620230: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 21seconds, to prevent instagram restrictions
-An error occurred while processing media 3408264523952144004_8719039516: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 6seconds, to prevent instagram restrictions
-An error occurred while processing media 3408403769099367709_45191160743: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 21seconds, to prevent instagram restrictions
-An error occurred while processing media 3408425595527718126_43574488473: feedback_required: We restrict certain activity to protect our community. Let us know if you think we made a mistake.
-Delay de 13seconds, to prevent instagram restrictions
-
-
-=== Execution at 2024-07-10 00:28:28.482740 ===
-Login successful and session saved
-login_with_retry ran
-Successfully fetched 20 medias on attempt 1
-
-
-=== Execution at 2024-07-10 00:32:56.931183 ===
-Login successful and session saved
-login_with_retry ran
-Successfully fetched 20 medias on attempt 1
-
-
-=== Execution at 2024-07-10 00:34:35.347159 ===
-Login successful and session saved
-login_with_retry ran
-Successfully fetched 20 medias on attempt 1
+=== Execution at 2024-07-10 20:32:36.280296 ===
+1: Rate limit hit, retrying in 30 seconds... (Attempt 1/5)
+1: Rate limit hit, retrying in 30 seconds... (Attempt 2/5)
+1: Rate limit hit, retrying in 30 seconds... (Attempt 3/5)
+1: Rate limit hit, retrying in 30 seconds... (Attempt 4/5)
+1: Rate limit hit, retrying in 30 seconds... (Attempt 5/5)
+Failed to log in after multiple attempts.
 
 
