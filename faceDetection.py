@@ -10,7 +10,7 @@ eye_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_eye.xml')
 fullbody_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_fullbody.xml')
 animal_face_classifier = cv2.CascadeClassifier('data/haarcascades/haarcascade_frontalcatface.xml')
 
-#detetar a cara
+""" #detetar a cara
 def detect_faces(img):
     face_img = img
 
@@ -23,7 +23,16 @@ def detect_faces(img):
     # Combine detections (optional)
     all_rect = np.concatenate((face_rect, animal_rect), axis=0)
 
-    return all_rect
+    return all_rect """
+    
+#detetar a cara
+def detect_faces(img):
+    face_img = img
+
+    # Detect human faces
+    face_rect = face_classifier.detectMultiScale(face_img, scaleFactor=1.3, minNeighbors=5)
+
+    return face_rect
 
 #colocar objetos na imagem 
 def object_above_head(img, face_rect, object_img, object_img2, object_img3):
@@ -153,6 +162,7 @@ image_files = glob.glob(os.path.join(image_folder, '*'))
 gemini_files = glob.glob(os.path.join(gemini_folder, '*'))
 
 
+
 def resize_with_aspect_ratio(image, new_width):
   height, width = image.shape[:2]
   aspect_ratio = float(width / height)
@@ -185,6 +195,8 @@ for i, image_file in enumerate(image_files):
     enfeites_random_resize_confety = resize_with_aspect_ratio(object_img3, new_width)
 
     face_detection = detect_faces(img)
+
+
     
     # se não for detetada nenhuma cara
     if len(face_detection) == 0:
@@ -202,17 +214,6 @@ for i, image_file in enumerate(image_files):
     os.remove(enfeites_random_baloon)
     os.remove(enfeites_random_confety)
 
-    """ filename_read = f"gemini_res/insta_{i+1}.txt"
-    with open(filename_read, "r", encoding="utf-8") as f:
-        data = f.read()
-
-    #tirar acentos
-    data_sem_acentos = remover_acentos(data)
-
-    text = data_sem_acentos
-    position = (5, 125)
-    img_text = add_text(img_object, text, position) """
-    
     #img_final = cv2.cvtColor(img_object, cv2.COLOR_BGR2RGB)
 
     output_file = os.path.join(output_folder, os.path.basename(image_file))

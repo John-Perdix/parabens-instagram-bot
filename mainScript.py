@@ -10,7 +10,8 @@ def log_output(script_name, output):
     with open(f"logs/{script_name}_log.txt", "a") as log_file:
         log_file.write(f"=== Execution at {datetime.datetime.now()} ===\n")
         log_file.write(output)
-        log_file.write("\n\n")
+        log_file.write("\n =================Next Script=================\n")
+        print(output)
 
 while True:
     for script in scripts:

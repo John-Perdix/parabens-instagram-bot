@@ -1,9 +1,19 @@
-=== Execution at 2024-07-10 20:32:36.280296 ===
-1: Rate limit hit, retrying in 30 seconds... (Attempt 1/5)
-1: Rate limit hit, retrying in 30 seconds... (Attempt 2/5)
-1: Rate limit hit, retrying in 30 seconds... (Attempt 3/5)
-1: Rate limit hit, retrying in 30 seconds... (Attempt 4/5)
-1: Rate limit hit, retrying in 30 seconds... (Attempt 5/5)
+=== Execution at 2024-07-11 19:31:52.381980 ===
+Login failed: ChallengeResolve: Unknown step_name "submit_phone" for "gratulationes0@gmail.com" in challenge resolver: {'step_name': 'submit_phone', 'step_data': {'phone_number': 'None', 'show_whatsapp_otp_choice': True, 'whatsapp': False}, 'flow_render_type': 3, 'bloks_action': 'com.instagram.challenge.navigation.take_challenge', 'cni': 17856100134211368, 'challenge_context': 'Af4G6R-EzLYQ-unqj3ljCz8LFos_w64kMgkxwGlzp0mvPc3wNk9fhEhEQT-4xYheWkwe2SH1SemV5CPbBebCvGKi5Cen9BvIqt-G-AlQEEeCK3W1J5KFIrSml7HkIgPio5D3GwBp188i1M6Tf3D0kS7o_OriyrWvEFXcJYfAGMKiefj8ZqoteV4gM1LPHL5agNf2HLmKzVuM1x68sIa5vsNg8eqkx_s87FM3Trqh-SOM', 'challenge_type_enum_str': 'SMS', 'status': 'ok'}
 Failed to log in after multiple attempts.
+
+
+=== Execution at 2024-07-11 19:33:32.320177 ===
+Login failed: ChallengeResolve: Unknown step_name "submit_phone" for "gratulationes0@gmail.com" in challenge resolver: {'step_name': 'submit_phone', 'step_data': {'phone_number': 'None', 'show_whatsapp_otp_choice': True, 'whatsapp': False}, 'flow_render_type': 3, 'bloks_action': 'com.instagram.challenge.navigation.take_challenge', 'cni': 17856100134211368, 'challenge_context': 'Af7joeG9zrjTL0uyV0cnQdCKCn2OBZ68Wz4DP03wgcqK2XNQEue_9t1vKNH370k3Uc2nDrD6jbihBkrn8uNET5vOmmqRVgmHFiEv72wRa9n3HPIf8FwsP-623dwtQ57Wq52SqllxUNGrAYYM_lzzkkmB4O8yODa0u4fJhU3mSDDfEcEzkKt_cklkxuIAhJbAr1bjPiMhJmNVFG6JSW-Bt4Tp4oZ2H9o56C5zfkGohqkn', 'challenge_type_enum_str': 'SMS', 'status': 'ok'}
+Failed to log in after multiple attempts.
+
+
+=== Execution at 2024-07-11 20:05:03.279413 ===
+2: Rate limit hit, retrying in 5 seconds... (Attempt 1/5)
+2: Rate limit hit, retrying in 5 seconds... (Attempt 2/5)
+2: Rate limit hit, retrying in 5 seconds... (Attempt 3/5)
+2: Rate limit hit, retrying in 5 seconds... (Attempt 4/5)
+2: Rate limit hit, retrying in 5 seconds... (Attempt 5/5)
+Failed to fetch medias after multiple attempts due to rate limits or other issues.
 
 
