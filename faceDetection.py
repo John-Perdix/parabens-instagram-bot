@@ -30,7 +30,7 @@ def detect_faces(img):
     face_img = img
 
     # Detect human faces
-    face_rect = face_classifier.detectMultiScale(face_img, scaleFactor=1.3, minNeighbors=5)
+    face_rect = face_classifier.detectMultiScale(face_img, scaleFactor=1.1, minNeighbors=3, minSize=(30, 30))
 
     return face_rect
 
@@ -221,7 +221,11 @@ for i, image_file in enumerate(image_files):
     # Loop through each image file
 for i, image_file in enumerate(image_files):
     print(f"Change image: {image_file}")
+
     img = cv2.imread(image_file)
+
+    # Apply histogram equalization
+    gray = cv2.equalizeHist(img)
 
     #escolher um enfeite para cada imagem
     enfeites_random_hat = random.choice(enfeites_folder_hat)
@@ -236,7 +240,7 @@ for i, image_file in enumerate(image_files):
     object_img3 = cv2.imread(enfeites_random_confety, cv2.IMREAD_UNCHANGED)
     enfeites_random_resize_confety = cv2.resize(object_img3, (new_width, new_height))
 
-    face_detection = detect_faces(img)
+    face_detection = detect_faces(gray)
     
     # se não for detetada nenhuma cara
     if len(face_detection) == 0:
