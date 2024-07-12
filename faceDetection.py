@@ -153,15 +153,13 @@ new_height = 40
 
 #caminho das imagens do insta
 image_folder = 'images'
-gemini_folder = 'gemini_res'
+info_folder = 'info_insta'
 output_folder = 'happyBirthday'
 os.makedirs(output_folder, exist_ok=True)
 
 # Use glob to find all image files with a specific extension (e.g., .jpg, .png)
 image_files = glob.glob(os.path.join(image_folder, '*'))
-gemini_files = glob.glob(os.path.join(gemini_folder, '*'))
-
-
+info_files = glob.glob(os.path.join(info_folder, '*'))
 
 """ def resize_with_aspect_ratio(image, new_width):
   height, width = image.shape[:2]
@@ -243,17 +241,21 @@ for i, image_file in enumerate(image_files):
     # se não for detetada nenhuma cara
     if len(face_detection) == 0:
         print(f"nenhuma cara detetada {image_file}")
+        os.remove(image_file)
+        for j, info_file in enumerate(info_files):
+            if i == j:
+                os.remove(info_file)
         continue
 
     img_object = object_above_head(img, face_detection, enfeites_random_resize_hat, enfeites_random_resize_baloon, enfeites_random_resize_confety)
 
     #remover os enfeites usados
-    os.remove(enfeites_random_hat)
-    os.remove(enfeites_random_baloon)
-    os.remove(enfeites_random_confety)
+    #os.remove(enfeites_random_hat)
+    #os.remove(enfeites_random_baloon)
+    #os.remove(enfeites_random_confety)
     
     #img_final = cv2.cvtColor(img_object, cv2.COLOR_BGR2RGB)
 
     output_file = os.path.join(output_folder, os.path.basename(image_file))
     cv2.imwrite(output_file, img_object)
-    os.remove(image_file)
+    #os.remove(image_file)

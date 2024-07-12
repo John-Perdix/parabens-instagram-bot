@@ -9,7 +9,7 @@ import sys
 from datetime import date
 
 # Read credentials from file
-with open("credenciais/credenciais.txt", "r") as f:
+with open("credenciais\credenciais6.txt", "r") as f:
     username, password = f.read().splitlines()
 
 # Path to save the session
@@ -46,7 +46,7 @@ def login_with_retry(client, username, password, session_path, retries=5, delay=
 
 
 hashtag = "parabens"
-num_medias = 20
+num_medias = 50
 
 def process_hashtag_medias(client, hashtag, num_medias, processed_file="processed_media/processed_media_ids.txt"):
     today = date.today()
@@ -84,10 +84,10 @@ def process_hashtag_medias(client, hashtag, num_medias, processed_file="processe
         for i, media in enumerate(posts_to_process):
             try:
                 # Like the post
-                client.media_like(media.id)
+                """ client.media_like(media.id)
                 randomDelay1 = random.randint(30, 120)  # Example: delay between 30 and 120 seconds
                 print(f"Delay of {randomDelay1} seconds to prevent restrictions.")
-                time.sleep(randomDelay1)
+                time.sleep(randomDelay1) """
                 
                 # Get more information about the media
                 mediaInfo = client.media_info(media.id)
@@ -96,7 +96,7 @@ def process_hashtag_medias(client, hashtag, num_medias, processed_file="processe
                 picture_url = user_info.profile_pic_url
 
                 # Save the photo with a unique filename
-                filename = f"images/insta_{i+1}"
+                filename = f"images/insta_{i+1:06x}"
                 # Download the photo
                 picture_data = client.photo_download_by_url(picture_url, filename)
                 
@@ -105,7 +105,7 @@ def process_hashtag_medias(client, hashtag, num_medias, processed_file="processe
                 print(usernameUser)
                 print(description)
 
-                filenameTxt = f"info_insta/insta_{i+1}.json"
+                filenameTxt = f"info_insta/insta_{i+1:06x}.json"
 
                 # Create a dictionary to hold the data
                 data = {

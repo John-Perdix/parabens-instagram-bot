@@ -40,6 +40,8 @@ chat_session = model.start_chat(history=[])
 
 # Specify the directory containing JSON files
 folder = 'info_insta'
+res_folder = 'gemini_res'
+os.makedirs(res_folder, exist_ok=True)
 
 # Use glob to find all JSON files
 files = glob.glob(os.path.join(folder, 'insta_*.json'))
@@ -64,12 +66,13 @@ for i, file in enumerate(files):
         
         # Write response to file
         response_text = response.text
-        filename_write = f"gemini_res/insta_{i+1}.txt"
+        base_filename = os.path.basename(file)
+        filename_write = os.path.join(res_folder, os.path.splitext(base_filename)[0] + '.txt')
         with open(filename_write, "w", encoding="utf-8") as f:
             f.write(response_text)
     
     # Optionally remove the JSON file after processing
-    os.remove(file)
+    #os.remove(file)
 
 print("All files processed successfully.")
 

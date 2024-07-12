@@ -3,7 +3,7 @@ import time
 import datetime
 
 # List of scripts to run in order
-scripts = ["bot.py", "gemini.py","tenor.py", "faceDetection.py", "new_post.py", "clear_folders.py"]
+scripts = ["bot.py","tenor.py", "faceDetection.py", "gemini.py",  "new_post.py", "clear_folders.py"]
 
 # Function to log output to a file
 def log_output(script_name, output):
@@ -11,7 +11,7 @@ def log_output(script_name, output):
         log_file.write(f"=== Execution at {datetime.datetime.now()} ===\n")
         log_file.write(output)
         log_file.write("\n =================Next Script=================\n")
-        print(output)
+    print(output)
 
 while True:
     for script in scripts:
@@ -20,6 +20,7 @@ while True:
             if result.returncode == 0:
                 print(f"Successfully ran {script}")
                 log_output(script, result.stdout)
+                print(result.stdout)
             else:
                 print(f"Error running {script}")
                 log_output(script, result.stderr)
