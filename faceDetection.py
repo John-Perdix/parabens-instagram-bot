@@ -160,63 +160,6 @@ os.makedirs(output_folder, exist_ok=True)
 # Use glob to find all image files with a specific extension (e.g., .jpg, .png)
 image_files = glob.glob(os.path.join(image_folder, '*'))
 info_files = glob.glob(os.path.join(info_folder, '*'))
-
-""" def resize_with_aspect_ratio(image, new_width):
-  height, width = image.shape[:2]
-  aspect_ratio = float(width / height)
-
-  if new_width > width:  # Only resize if necessary
-    # Scale based on width
-    new_height = int(new_width / aspect_ratio)
-    return cv2.resize(image, (new_width, new_height))
-  else:
-    # Image is already smaller or equal to desired width, no resize needed
-    return image
-
-
-# Loop through each image file
-for i, image_file in enumerate(image_files):
-    print(f"Change image: {image_file}")
-    img = cv2.imread(image_file)
-
-    #escolher um enfeite para cada imagem
-    enfeites_random_hat = random.choice(enfeites_folder_hat)
-    object_img = cv2.imread(enfeites_random_hat, cv2.IMREAD_UNCHANGED) #para verificar a transparencia
-    enfeites_random_resize_hat = resize_with_aspect_ratio(object_img, new_width)
-
-    enfeites_random_baloon = random.choice(enfeites_folder_baloons)
-    object_img2 = cv2.imread(enfeites_random_baloon, cv2.IMREAD_UNCHANGED)
-    enfeites_random_resize_baloon = resize_with_aspect_ratio(object_img2, new_width)
-
-    enfeites_random_confety = random.choice(enfeites_folder_confety)
-    object_img3 = cv2.imread(enfeites_random_confety, cv2.IMREAD_UNCHANGED)
-    enfeites_random_resize_confety = resize_with_aspect_ratio(object_img3, new_width)
-
-    face_detection = detect_faces(img)
-
-
-    
-    # se não for detetada nenhuma cara
-    if len(face_detection) == 0:
-        print(f"nenhuma cara detetada {image_file}")
-        os.remove(image_file)
-        for j, gemini_file in enumerate(gemini_files):
-            if i == j:
-                os.remove(gemini_file)
-        continue
-
-    img_object = object_above_head(img, face_detection, enfeites_random_resize_hat, enfeites_random_resize_baloon, enfeites_random_resize_confety)
-
-    #remover os enfeites usados
-    os.remove(enfeites_random_hat)
-    os.remove(enfeites_random_baloon)
-    os.remove(enfeites_random_confety)
-
-    #img_final = cv2.cvtColor(img_object, cv2.COLOR_BGR2RGB)
-
-    output_file = os.path.join(output_folder, os.path.basename(image_file))
-    cv2.imwrite(output_file, img_object)
-    os.remove(image_file) """
     
     # Loop through each image file
 for i, image_file in enumerate(image_files):
