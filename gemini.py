@@ -72,7 +72,7 @@ for i, file in enumerate(files):
             f.write(response_text)
     
     # Optionally remove the JSON file after processing
-    #os.remove(file)
+    os.remove(file)
 
 print("All files processed successfully.")
 

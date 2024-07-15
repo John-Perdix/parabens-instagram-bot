@@ -224,8 +224,10 @@ for i, image_file in enumerate(image_files):
 
     img = cv2.imread(image_file)
 
+    img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
     # Apply histogram equalization
-    gray = cv2.equalizeHist(img)
+    gray = cv2.equalizeHist(img_gray)
 
     #escolher um enfeite para cada imagem
     enfeites_random_hat = random.choice(enfeites_folder_hat)
@@ -254,12 +256,12 @@ for i, image_file in enumerate(image_files):
     img_object = object_above_head(img, face_detection, enfeites_random_resize_hat, enfeites_random_resize_baloon, enfeites_random_resize_confety)
 
     #remover os enfeites usados
-    #os.remove(enfeites_random_hat)
-    #os.remove(enfeites_random_baloon)
-    #os.remove(enfeites_random_confety)
+    os.remove(enfeites_random_hat)
+    os.remove(enfeites_random_baloon)
+    os.remove(enfeites_random_confety)
     
     #img_final = cv2.cvtColor(img_object, cv2.COLOR_BGR2RGB)
 
     output_file = os.path.join(output_folder, os.path.basename(image_file))
     cv2.imwrite(output_file, img_object)
-    #os.remove(image_file)
+    os.remove(image_file)

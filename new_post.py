@@ -25,7 +25,7 @@ def upload_photos(client, image_files, caption_files):
         try:
             caption = read_caption(caption_file)
             client.photo_upload(image_file, caption)
-            #os.remove(image_file)
+            os.remove(image_file)
             print(f"Uploaded and removed image: {image_file}")
             time.sleep(60)  # Add a delay of 60 seconds between uploads
         except client.exceptions.FeedbackRequired:
